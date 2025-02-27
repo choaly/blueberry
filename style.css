@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+} */
+
+.container {
+    display: flex; /* Makes this a flex container */
+    width: 100%;
+    min-height: 100vh; /* a value of 100vh is equal to 100% of the viewport height */
+    /* background: linear-gradient(135deg, #cf9aff, #95c0ff); */
+    background: linear-gradient(135deg, #c9f1ff, #9ba1fe);
+}
+
+.notes__sidebar {
+    background: #c1d3fe;
+    flex-basis: 20%; /* flex-basis sets the initial size of a flex item before space distribution occurs. kind of like width or height. refers to how much space of the PARENT container. */
+    padding: 2%;
+}
+
+.notes__create {
+    background: #487fff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75em 0.4em; /* first num is top/bottom padding, second num is left/right padding */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* .notes__create {
+    border-radius: 7px;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+} */
+
+.notes__create:hover {
+    background: #1a56e4;
+    color: #ffffff;
+}
+
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 5px;
+}
+
+.notes__small-title {
+    font-weight: bold;
+}
+
+.notes__small-body {
+    padding: 0 5px; /* The first value (0) specifies the top and bottom padding (vertical padding).
+The second value (10px) specifies the left and right padding (horizontal padding). */
+font-size: 0.8em;
+}
+
+.notes__small-updated {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+.notes__list {
+
+}
+
+.notes__list-item {
+    padding: 10px;
+}
+
+.notes__list-item-selected {
+    background: #e2eafc;
+    border-radius: 7px;
+    
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    background: #e2eafc;
+    flex-basis: 80%; /* refers to how much space of the PARENT container. */
+    padding: 2%;
+    /* padding: 2em 3em; */
+    flex-grow: 3;
+}
+
+.notes__title {
+    font-size: 2em;
+    width: 50%;
+    border: none;
+    outline: none;
+    /* flex-basis: 10%; /* refers to how much space of the PARENT container.
+    When flex-direction is row, flex-basis controls width.
+    But when flex-direction is column, flex-basis controls height. */
+    margin: 5px;
+    background: #e2eafc;
+    /* border-radius: 15px;
+    padding: 10px; */
+}
+
+.notes__generate-quiz {
+    border: none;
+    width: 100px;
+    margin: 5px;
+}
+
+.notes__body {
+    width: 100%;
+    /* height: 100%; */
+    border: none;
+    outline: none;
+    flex-basis: 50%;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #e2eafc;
+
+}
+
+/* ***************************** */
+
+.generate-quiz-container {
+    /* position: relative; */
+    width: 100%;
+    /* max-width: 500px; */
+    background: green;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+}
+
+.quiz-container {
+    background: lightgreen;
+    /* float: left; */
+    /* margin: 10px; */
+    padding: 10px;
+    /* height: 80%; */
+    width: 30%;
+}
